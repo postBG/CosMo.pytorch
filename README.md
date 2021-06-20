@@ -6,10 +6,10 @@ Presented at [CVPR2021](http://cvpr2021.thecvf.com/)
 
 ![fig](readme_figs/cosmo_fig.png)
 
-## Setup
+## :gear: Setup
 Python: python3.7
 
-### Install required packages
+### :package: Install required packages
 
 Install torch and torchvision via following command (CUDA10)
 
@@ -22,13 +22,13 @@ Install other packages
 pip install -r requirements.txt
 ```
 
-### Dataset
+### :open_file_folder: Dataset
 Download the FashionIQ dataset by following the instructions on this [link](https://github.com/XiaoxiaoGuo/fashion-iq). 
 
 We have set the default path for FashionIQ datasets in [data/fashionIQ.py](data/fashionIQ.py) as `_DEFAULT_FASHION_IQ_DATASET_ROOT = '/data/image_retrieval/fashionIQ'`. You can change this path to wherever you plan on storing the dataset.
 
 
-### Vocabulary file
+### :books: Vocabulary file
 Open up a python console and run the following lines to download NLTK punkt:
 ```python
 import nltk
@@ -37,14 +37,14 @@ nltk.download('punkt')
 
 Then, open up a Jupyter notebook and run [jupyter_files/how_to_create_fashion_iq_vocab.ipynb](jupyter_files/how_to_create_fashion_iq_vocab.ipynb). As with the dataset, the default path is set in [data/fashionIQ.py](data/fashionIQ.py).
 
-### Weights & Biases
+### :chart_with_upwards_trend: Weights & Biases
 We use [Weights and Biases](https://wandb.ai/) to log our experiments.
 
 If you already have a Weights & Biases account, head over to `configs/FashionIQ_trans_g2_res50_config.json` and fill out your `wandb_account_name`. You can also change the default at `options/command_line.py`.
 
 If you do not have a Weights & Biases account, you can either create one or change the code and logging functions to your liking.
 
-## Run
+## :running_man: Run
 
 You can run the code by the following command:
 ```bash
@@ -56,7 +56,7 @@ Note that you do not need to assign `--device_idx` if you have already specified
 We run on 4 12GB GPUs, and the main gpu `gpu:0` uses around 4GB of VRAM.
 
 
-## Citation
+## 	:scroll: Citation
 If you use our code, please cite our work:
 ```
 @InProceedings{CoSMo2021_CVPR,
