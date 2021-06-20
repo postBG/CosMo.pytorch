@@ -1,5 +1,5 @@
 {
-  "epoch": 80,
+  "epoch": 50,
   "batch_size": 32,
   "num_workers": 16,
   "metric_loss": "batch_based_classification_loss",
@@ -23,6 +23,8 @@
   "topk": "1,5,10,50",
   "margin": 12,
   "dataset": "fashionIQ_dress",
+  "wandb_project_name": "CoSMo.pytorch",
+  "wandb_account_name": "your_account_name_here",
   "device_idx": "",
   "experiment_description": ""
 }

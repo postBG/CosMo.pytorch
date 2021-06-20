@@ -1,7 +1,7 @@
 import argparse
 import sys
 
-parser = argparse.ArgumentParser(description='Options for IR.pytorch')
+parser = argparse.ArgumentParser(description='Options for CoSMo.pytorch')
 
 #########################
 # Load Template
@@ -24,7 +24,8 @@ parser.add_argument('--vocab_threshold', type=int, default=0, help='Vocabulary w
 #########################
 # Dataset / DataLoader Settings
 #########################
-parser.add_argument('--dataset', type=str, default='fashionIQ_dress', help='Dataset')
+parser.add_argument('--dataset', type=str, default='fashionIQ_dress',
+                    choices=['fashionIQ_dress', 'fashionIQ_toptee', 'fashionIQ_shirt'], help='Dataset')
 parser.add_argument('--batch_size', type=int, default=32, help='Batch Size')
 parser.add_argument('--num_workers', type=int, default=16, help='The Number of Workers')
 parser.add_argument('--shuffle', type=bool, default=True, help='Shuffle Dataset')
@@ -72,6 +73,8 @@ parser.add_argument('--gamma', type=float, default=0.1, help='learning rate deca
 # Logging Settings
 #########################
 parser.add_argument('--topk', type=str, default='1,5,10,50', help='topK recall for evaluation')
+parser.add_argument('--wandb_project_name', type=str, default='CoSMo.pytorch', help='Weights & Biases project name')
+parser.add_argument('--wandb_account_name', type=str, default='your_account_name', help='Weights & Biases account name')
 
 #########################
 # Resume Training

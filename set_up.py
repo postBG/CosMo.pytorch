@@ -88,8 +88,10 @@ def setup_experiment(config):
     pp.pprint(config, width=1)
     os.environ['WANDB_SILENT'] = "true"
     tags = generate_tags(config)
+    project_name = config['wandb_project_name']
+    wandb_account_name = config['wandb_account_name']
     experiment_name = config['experiment_description']
     experiment_name = experiment_name if config['random_seed'] != -1 else experiment_name + "_{}".format(random_seed)
-    wandb.init(config=config, name=experiment_name, project='CosMo.pytorch',
-               entity='bobrolab', tags=tags)
+    wandb.init(config=config, name=experiment_name, project=project_name,
+               entity=wandb_account_name, tags=tags)
     return export_root, config
