@@ -1,6 +1,6 @@
 # CoSMo.pytorch
 
-Official Implementation of **[CoSMo: Content-Style Modulationfor Image Retrieval with Text Feedback](https://openaccess.thecvf.com/content/CVPR2021/html/Lee_CoSMo_Content-Style_Modulation_for_Image_Retrieval_With_Text_Feedback_CVPR_2021_paper.html)**, Seungmin Lee*, Dongwan Kim*, Bohyung Han. *(*denotes equal contribution)*
+Official Implementation of **[CoSMo: Content-Style Modulation for Image Retrieval with Text Feedback](https://openaccess.thecvf.com/content/CVPR2021/html/Lee_CoSMo_Content-Style_Modulation_for_Image_Retrieval_With_Text_Feedback_CVPR_2021_paper.html)**, Seungmin Lee*, Dongwan Kim*, Bohyung Han. *(*denotes equal contribution)*
 
 Presented at [CVPR2021](http://cvpr2021.thecvf.com/)
 
@@ -57,7 +57,7 @@ We run on 4 12GB GPUs, and the main gpu `gpu:0` uses around 4GB of VRAM.
 
 
 ## Citation
-If you use our code, please cit our work:
+If you use our code, please cite our work:
 ```
 @InProceedings{CoSMo2021_CVPR,
     author    = {Lee, Seungmin and Kim, Dongwan and Han, Bohyung},
