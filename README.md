@@ -4,7 +4,9 @@ Official Implementation of **[CoSMo: Content-Style Modulation for Image Retrieva
 
 Presented at [CVPR2021](http://cvpr2021.thecvf.com/)
 
-![fig](readme_figs/cosmo_fig.png)
+[Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Lee_CoSMo_Content-Style_Modulation_for_Image_Retrieval_With_Text_Feedback_CVPR_2021_paper.pdf) | [Poster](readme_resources/CoSMo%20poster.pdf) | [5 min Video](https://youtu.be/GPwTILo6fS4)
+
+![fig](readme_resources/cosmo_fig.png)
 
 ## :gear: Setup
 Python: python3.7
@@ -54,6 +56,11 @@ python main.py --config_path=configs/FashionIQ_trans_g2_res50_config.json --expe
 Note that you do not need to assign `--device_idx` if you have already specified `CUDA_VISIBLE_DEVICES=0,1,2,3` in your terminal. 
 
 We run on 4 12GB GPUs, and the main gpu `gpu:0` uses around 4GB of VRAM.
+
+### :warning: Notes on Evaluation
+In our paper, we mentioned that we use a slightly different evaluation method than the original FashionIQ dataset. This was done to match the evaluation method used by [VAL](https://openaccess.thecvf.com/content_CVPR_2020/html/Chen_Image_Search_With_Text_Feedback_by_Visiolinguistic_Attention_Learning_CVPR_2020_paper.html). 
+
+By default, this code uses the proper evaluation method (as intended by the creators of the dataset). The results for this is shown in our supplementary materials. If you'd like to use the same evaluation method as our main paper (and VAL), head over to [data/fashionIQ.py](data/fashionIQ.py#L129) and uncomment the commented section.
 
 
 ## 	:scroll: Citation

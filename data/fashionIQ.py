@@ -125,7 +125,7 @@ class FashionIQTestDataset(AbstractBaseFashionIQDataset, AbstractBaseTestDataset
 
         self.img_list = _get_img_split_json_as_list(root_path, clothing_type, split)
 
-        ## BITCH EVAL BELOW
+        ''' Uncomment below for VAL Evaluation method '''
         # self.img_caption_data = _get_img_caption_json(root_path, clothing_type, split)
         # self.img_list = []
         # for d in self.img_caption_data:
