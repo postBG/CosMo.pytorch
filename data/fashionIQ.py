@@ -22,7 +22,7 @@ def _get_img_split_json_as_list(dataset_root, clothing_type, split):
 
 
 def _create_img_path_from_id(root, id):
-    return os.path.join(root, '{}.png'.format(id))
+    return os.path.join(root, '{}.jpg'.format(id))
 
 
 def _get_img_path_using_idx(img_caption_data, img_root, idx, is_ref=True):
