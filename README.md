@@ -39,6 +39,8 @@ nltk.download('punkt')
 
 Then, open up a Jupyter notebook and run [jupyter_files/how_to_create_fashion_iq_vocab.ipynb](jupyter_files/how_to_create_fashion_iq_vocab.ipynb). As with the dataset, the default path is set in [data/fashionIQ.py](data/fashionIQ.py).
 
+**We have provided a vocab file in `jupyter_files/fashion_iq_vocab.pkl`.**
+
 ### :chart_with_upwards_trend: Weights & Biases
 We use [Weights and Biases](https://wandb.ai/) to log our experiments.
 
