@@ -5,7 +5,7 @@
   "metric_loss": "batch_based_classification_loss",
   "selector": "all",
   "global_styler": "global2",
-  "lstm_hidden_size": 1024,
+  "lstm_hidden_size": 512,
   "text_feature_size": 512,
   "image_encoder": "resnet50_layer4",
   "text_encoder": "lstm",
