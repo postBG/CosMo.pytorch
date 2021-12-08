@@ -29,6 +29,8 @@ Download the FashionIQ dataset by following the instructions on this [link](http
 
 We have set the default path for FashionIQ datasets in [data/fashionIQ.py](data/fashionIQ.py) as `_DEFAULT_FASHION_IQ_DATASET_ROOT = '/data/image_retrieval/fashionIQ'`. You can change this path to wherever you plan on storing the dataset.
 
+#### :arrows_counterclockwise: Update Dec 8th, 2021
+It seems like more and more download links to FashionIQ images are being taken down. As a *temporary* solution, we have uploaded a version of the dataset in [Google Drive](https://drive.google.com/drive/folders/14JG_w0V58iex62bVUHSBDYGBUECbDdx9?usp=sharing). Please be aware that this link is not permanent, and may be taken down in the near future. 
 
 ### :books: Vocabulary file
 Open up a python console and run the following lines to download NLTK punkt:
